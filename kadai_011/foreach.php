@@ -7,16 +7,20 @@
 </head>
 
 <body>
-   <p>
-       <?php
-       $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
+<?php
+// Step2. 連想配列を作成する
+$vegetable = [
+    "名前" => "玉ねぎ",
+    "値段" => 200,
+    "産地" => "北海道"
+];
 
-       //  配列$user_namesの要素を1つずつ順番に出力する
-       foreach ($user_names as $user_name) {
-           echo $user_name . '<br>';
-       }
-       ?>
-   </p>
+// Step3. 値を出力する
+foreach ($vegetable as $key => $value) {
+    echo $key . " : " . $value . "<br>";
+}
+?>
+
 </body>
 
 </html>
